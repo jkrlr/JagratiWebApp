@@ -1,6 +1,7 @@
 # CONTAINS SETTINGS FOR HEROKU DEPLOYMENT
 
 import django_heroku
+import dj_database_url
 
 from .base import *
 
