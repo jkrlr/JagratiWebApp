@@ -73,6 +73,73 @@ And additional requirements are in [**requirements.txt**](https://github.com/gar
 
 ### Setting-up the project
 
+<details><summary>Step 1 : Downloading and Installing the Code Editor</summary>
+ 
+ 
+| **Code Editor** | **Link** 	|
+|-	|-	|
+| Visual Studio Code 	| [Download it from here](https://code.visualstudio.com/)	|
+| Sublime Text 3 	| [Download it from here](https://www.sublimetext.com/3) |
+| Atom 	| [Download it from here](https://atom.io/)	|
+
+
+</details>
+
+
+---
+
+
+<details><summary>Step 2 : Installing Python 3.7</summary>
+ 
+
+* For Windows : Click on [Download Python](https://www.python.org/downloads/release/python-379/) 
+   * * Download the Windows x86-64 executable installer for 64-bit version of Windows
+   * * Download the Windows x86 executable installer for 32-bit version of Windows.
+
+   * * Make sure to check "Add Python 3.7 to Path" in the setup window of the Installer.
+
+
+* For Linux(Ubuntu) :
+   * * Follow the first mehod of [this article](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/)
+
+
+Verify the installation from the command prompt / terminal using following command :
+```
+python3.7 --version
+```
+And the installed version of python will be printed:
+```
+Python 3.7.x
+```
+
+
+</details>
+
+
+---
+
+
+<details><summary>Step 3 : Installing Git </summary>
+
+Click on [Download Git](https://git-scm.com/downloads)
+
+</details>
+
+
+---
+
+
+<details><summary>Step 4 : Fork the Repository </summary>
+
+Click on ![Fork](https://user-images.githubusercontent.com/63921263/110382285-b07bba80-8080-11eb-8407-d354849c1753.png)
+to fork [this Repo](https://github.com/garg3133/JagratiWebApp)
+
+</details>
+
+
+---
+
+
   * Download and install Python 3.7
   * Download and install Git.
   * Fork the Repository.
