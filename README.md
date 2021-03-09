@@ -73,16 +73,65 @@ And additional requirements are in [**requirements.txt**](https://github.com/gar
 
 ### Setting-up the project
 
-  * Download and install Python 3.7
-  * Download and install Git.
-  * Fork the Repository.
-  * Clone the repository to your local machine `$ git clone https://github.com/<your-github-username>/JagratiWebApp.git`
-  * Change directory to JagratiWebApp `$ cd JagratiWebApp`
-  * Install virtualenv `$ pip3 install virtualenv`
-  * Create a virtual environment `$ virtualenv env -p python3.7`  
-  * Activate the env: `$ source env/bin/activate` (for linux) `> ./env/Scripts/activate` (for Windows PowerShell)
-  * Install the requirements: `$ pip install -r requirements.txt`
-  * Create a new file in the root directory of the repository (`JagratiWebApp`) with name `.env` (only `.env` and not `.env.txt`) and add the following content in it:
+  **1.** Download and install Python 3.7
+ 
+  **2.** Download and install Git.
+  
+  **3.** Fork [this](https://github.com/garg3133/JagratiWebApp) Repository.
+ 
+  **4.** Clone the repository to your local machine.
+  
+  ```
+  $ git clone https://github.com/<your-github-username>/JagratiWebApp.git
+  ```
+  
+  **5.** Change directory to JagratiWebApp 
+  ```
+  $ cd JagratiWebApp
+  ```
+ 
+  **6.0** Add a reference(remote) to the original repository.
+  ``` 
+  $ git remote add upstream https://github.com/garg3133/JagratiWebApp.git
+  ```
+
+  **6.1** Check the remotes for this repository.
+  ```
+  $ git remote -v
+  ```
+
+  **6.2 (Tip):** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+  ```
+  $ git pull upstream master
+  ```
+
+  **7.0** Install virtualenv 
+  ```
+  $ pip3 install virtualenv
+  ```
+  
+  **7.1** Create a virtual environment 
+  ```
+  $ virtualenv env -p python3.7
+  ```
+  
+  **7.2** Activate the env: 
+  ```
+  (for Linux) 
+  $ source env/bin/activate
+  ``` 
+  ```
+  (for Windows PowerShell)
+  > ./env/Scripts/activate
+  ``` 
+  
+  **8.** Install the requirements: 
+  ```
+  $ pip install -r requirements.txt
+  ```
+
+  **9.**  Create a new file in the root directory of the repository (`JagratiWebApp`) with name `.env` (only `.env` and not `.env.txt`) and add the following content in it:
+  
     ```
     EMAIL_HOST_USER = 'your-email@domain.com'
     EMAIL_HOST_PASSWORD = 'your-password'
@@ -102,11 +151,29 @@ And additional requirements are in [**requirements.txt**](https://github.com/gar
     * `SOCIAL_AUTH_GOOGLE_OAUTH2_KEY` and `SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET` are the API keys for login/signup using Google.
 
     **Note:** All the changes mentioned above in the `.env` template are *optional* and you do not need to change anything if you want all the email contents to be printed in the console itself and you do not wish to use login/signup through Google. The changes in the first 4 lines on `.env` file are required only if you wish to send out real emails to real people and changes in last 2 lines are required only if you wish to use login/signup through Google.
-  * Copy `sample-db.sqlite3` from `samples` directory to the root directory (`JagratiWebApp`) and rename it to `db.sqlite3`.
-  * Make migrations `$ python manage.py makemigrations`
-  * Migrate the changes to the database `$ python manage.py migrate`
-  * Create admin `$ python manage.py createsuperuser`
-  * Run the server `$ python manage.py runserver`
+    
+ 
+  **10.** Copy `sample-db.sqlite3` from `samples` directory to the root directory (`JagratiWebApp`) and rename it to `db.sqlite3`.
+  
+  **11.** Make migrations 
+  ```
+  $ python manage.py makemigrations
+  ```
+  
+  **12.** Migrate the changes to the database 
+  ```
+  $ python manage.py migrate
+  ```
+  
+  **13.** Create admin 
+  ```
+  $ python manage.py createsuperuser
+  ```
+  
+  **14.** Run the server 
+  ```
+  $ python manage.py runserver
+  ```
 
  ### Setting-up the project in docker
 
