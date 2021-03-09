@@ -90,7 +90,7 @@ And additional requirements are in [**requirements.txt**](https://github.com/gar
   $ cd JagratiWebApp
   ```
  
-  **6.0** Add a reference(remote) to the original repository.
+  **6.** Add a reference(remote) to the original repository.
   ``` 
   $ git remote add upstream https://github.com/garg3133/JagratiWebApp.git
   ```
@@ -100,12 +100,12 @@ And additional requirements are in [**requirements.txt**](https://github.com/gar
   $ git remote -v
   ```
 
-  **6.2 (Tip):** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+  **6.2 (Tip):** Always take a pull from the upstream repository to your master branch to keep it Up to date from central repo (updated repository).
   ```
   $ git pull upstream master
   ```
 
-  **7.0** Install virtualenv 
+  **7.** Install virtualenv 
   ```
   $ pip3 install virtualenv
   ```
@@ -130,7 +130,7 @@ And additional requirements are in [**requirements.txt**](https://github.com/gar
   $ pip install -r requirements.txt
   ```
 
-  **9.**  Create a new file in the root directory of the repository (`JagratiWebApp`) with name `.env` (only `.env` and not `.env.txt`) and add the following content in it:
+  **9.** Create a new file in the root directory of the repository (`JagratiWebApp`) with name `.env` (only `.env` and not `.env.txt`) and add the following content in it:
   
     ```
     EMAIL_HOST_USER = 'your-email@domain.com'
@@ -145,12 +145,12 @@ And additional requirements are in [**requirements.txt**](https://github.com/gar
     or, just copy the `.env.save` file from `samples` directory to the root directory (`JagratiWebApp`) and rename it to `.env` (only `.env` and not `.env.txt`)  
   
     where, 
-    * `EMAIL_HOST_USER` and `SENDER_EMAIL` is the email address of your Gmail account from which you want to send emails (By default, Django will output email contents in console. To actually send emails to real users, comment line 27 and uncomment line 28 in `Jagrati/settings/development.py`).
-    * `EMAIL_HOST_PASSWORD` is the password for that Gmail account.
-    * `ADMINS_EMAIL` is a list of email addresses of Admins of the site (who will recieve important updates from the site like when a new user joins in).
-    * `SOCIAL_AUTH_GOOGLE_OAUTH2_KEY` and `SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET` are the API keys for login/signup using Google.
+   * `EMAIL_HOST_USER` and `SENDER_EMAIL` is the email address of your Gmail account from which you want to send emails (By default, Django will output email contents in console. To actually send emails to real users, comment line 27 and uncomment line 28 in `Jagrati/settings/development.py`).
+   * `EMAIL_HOST_PASSWORD` is the password for that Gmail account.
+   * `ADMINS_EMAIL` is a list of email addresses of Admins of the site (who will recieve important updates from the site like when a new user joins in).
+   * `SOCIAL_AUTH_GOOGLE_OAUTH2_KEY` and `SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET` are the API keys for login/signup using Google.
 
-    **Note:** All the changes mentioned above in the `.env` template are *optional* and you do not need to change anything if you want all the email contents to be printed in the console itself and you do not wish to use login/signup through Google. The changes in the first 4 lines on `.env` file are required only if you wish to send out real emails to real people and changes in last 2 lines are required only if you wish to use login/signup through Google.
+   **Note:** All the changes mentioned above in the `.env` template are *optional* and you do not need to change anything if you want all the email contents to be printed in the console itself and you do not wish to use login/signup through Google. The changes in the first 4 lines on `.env` file are required only if you wish to send out real emails to real people and changes in last 2 lines are required only if you wish to use login/signup through Google.
     
  
   **10.** Copy `sample-db.sqlite3` from `samples` directory to the root directory (`JagratiWebApp`) and rename it to `db.sqlite3`.
